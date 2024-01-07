@@ -1,0 +1,55 @@
+* {
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+:root {
+    --strokeColor: #000;
+    --textColor: #fff;
+    --backgroundColor: #0f0;
+    --fontFamily: "Sukhumvit Set";
+    --fontSize: 150px;
+}
+
+body {
+    background: var(--backgroundColor);
+}
+
+div.mainContent {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.display {
+    color: var(--textColor);
+    font-weight: 900;
+    font-family: var(--fontFamily);
+    font-size: var(--fontSize);
+    /* text-shadow: 3px 0 0 black,0 3px 0 black,-3px 0 0 black,0 -3px 0 black; */
+    text-shadow: -5px -5px 0 var(--strokeColor), -5px -4px 0 var(--strokeColor), -5px -3px 0 var(--strokeColor), -5px -2px 0 var(--strokeColor), -5px -1px 0 var(--strokeColor), -5px 0px 0 var(--strokeColor), -5px 1px 0 var(--strokeColor), -5px 2px 0 var(--strokeColor), -5px 3px 0 var(--strokeColor), -5px 4px 0 var(--strokeColor), -5px 5px 0 var(--strokeColor), -4px -5px 0 var(--strokeColor), -4px -4px 0 var(--strokeColor), -4px -3px 0 var(--strokeColor), -4px -2px 0 var(--strokeColor), -4px -1px 0 var(--strokeColor), -4px 0px 0 var(--strokeColor), -4px 1px 0 var(--strokeColor), -4px 2px 0 var(--strokeColor), -4px 3px 0 var(--strokeColor), -4px 4px 0 var(--strokeColor), -4px 5px 0 var(--strokeColor), -3px -5px 0 var(--strokeColor), -3px -4px 0 var(--strokeColor), -3px -3px 0 var(--strokeColor), -3px -2px 0 var(--strokeColor), -3px -1px 0 var(--strokeColor), -3px 0px 0 var(--strokeColor), -3px 1px 0 var(--strokeColor), -3px 2px 0 var(--strokeColor), -3px 3px 0 var(--strokeColor), -3px 4px 0 var(--strokeColor), -3px 5px 0 var(--strokeColor), -2px -5px 0 var(--strokeColor), -2px -4px 0 var(--strokeColor), -2px -3px 0 var(--strokeColor), -2px -2px 0 var(--strokeColor), -2px -1px 0 var(--strokeColor), -2px 0px 0 var(--strokeColor), -2px 1px 0 var(--strokeColor), -2px 2px 0 var(--strokeColor), -2px 3px 0 var(--strokeColor), -2px 4px 0 var(--strokeColor), -2px 5px 0 var(--strokeColor), -1px -5px 0 var(--strokeColor), -1px -4px 0 var(--strokeColor), -1px -3px 0 var(--strokeColor), -1px -2px 0 var(--strokeColor), -1px -1px 0 var(--strokeColor), -1px 0px 0 var(--strokeColor), -1px 1px 0 var(--strokeColor), -1px 2px 0 var(--strokeColor), -1px 3px 0 var(--strokeColor), -1px 4px 0 var(--strokeColor), -1px 5px 0 var(--strokeColor), 0px -5px 0 var(--strokeColor), 0px -4px 0 var(--strokeColor), 0px -3px 0 var(--strokeColor), 0px -2px 0 var(--strokeColor), 0px -1px 0 var(--strokeColor), 0px 0px 0 var(--strokeColor), 0px 1px 0 var(--strokeColor), 0px 2px 0 var(--strokeColor), 0px 3px 0 var(--strokeColor), 0px 4px 0 var(--strokeColor), 0px 5px 0 var(--strokeColor), 1px -5px 0 var(--strokeColor), 1px -4px 0 var(--strokeColor), 1px -3px 0 var(--strokeColor), 1px -2px 0 var(--strokeColor), 1px -1px 0 var(--strokeColor), 1px 0px 0 var(--strokeColor), 1px 1px 0 var(--strokeColor), 1px 2px 0 var(--strokeColor), 1px 3px 0 var(--strokeColor), 1px 4px 0 var(--strokeColor), 1px 5px 0 var(--strokeColor), 2px -5px 0 var(--strokeColor), 2px -4px 0 var(--strokeColor), 2px -3px 0 var(--strokeColor), 2px -2px 0 var(--strokeColor), 2px -1px 0 var(--strokeColor), 2px 0px 0 var(--strokeColor), 2px 1px 0 var(--strokeColor), 2px 2px 0 var(--strokeColor), 2px 3px 0 var(--strokeColor), 2px 4px 0 var(--strokeColor), 2px 5px 0 var(--strokeColor), 3px -5px 0 var(--strokeColor), 3px -4px 0 var(--strokeColor), 3px -3px 0 var(--strokeColor), 3px -2px 0 var(--strokeColor), 3px -1px 0 var(--strokeColor), 3px 0px 0 var(--strokeColor), 3px 1px 0 var(--strokeColor), 3px 2px 0 var(--strokeColor), 3px 3px 0 var(--strokeColor), 3px 4px 0 var(--strokeColor), 3px 5px 0 var(--strokeColor), 4px -5px 0 var(--strokeColor), 4px -4px 0 var(--strokeColor), 4px -3px 0 var(--strokeColor), 4px -2px 0 var(--strokeColor), 4px -1px 0 var(--strokeColor), 4px 0px 0 var(--strokeColor), 4px 1px 0 var(--strokeColor), 4px 2px 0 var(--strokeColor), 4px 3px 0 var(--strokeColor), 4px 4px 0 var(--strokeColor), 4px 5px 0 var(--strokeColor), 5px -5px 0 var(--strokeColor), 5px -4px 0 var(--strokeColor), 5px -3px 0 var(--strokeColor), 5px -2px 0 var(--strokeColor), 5px -1px 0 var(--strokeColor), 5px 0px 0 var(--strokeColor), 5px 1px 0 var(--strokeColor), 5px 2px 0 var(--strokeColor), 5px 3px 0 var(--strokeColor), 5px 4px 0 var(--strokeColor), 5px 5px 0 var(--strokeColor);
+}
+
+div.control {
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.controlBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.controlBlock > input {
+    text-align: center;
+    font-size: 14px;
+}
