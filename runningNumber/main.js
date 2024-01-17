@@ -23,10 +23,9 @@ function startNumChanged(e) {
 }
 
 function updateText(num, text) {
-  console.log(num);
   document.querySelector(".display").textContent = text.replace(
     "{num}",
-    `${num}`
+    `${num.toLocaleString()}`
   );
 }
 
