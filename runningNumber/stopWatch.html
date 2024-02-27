@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="stopWatch.js" defer></script>
+</head>
+<body>
+    <div class="mainContent">
+        <div class="display">00:00</div>
+    </div>
+    <div class="control">
+        <div class="controlBlock">
+            <label for="displayText">displayText</label><input type="text" name="displayText" id="displayText" value="{minute}:{second}" onchange="displayChanged(this)">
+        </div>
+        <div class="controlBlock">
+            <label for="startNum">startSecond</label><input type="number" name="startNum" id="startNum" value="0" onchange="startNumChanged(this)">
+        </div>
+        <div class="controlBlock">
+            <label for="finalNum">finalSecond</label><input type="number" name="finalNum" id="finalNum" value="100">
+        </div>
+        <div class="controlBlock">
+            <label for="countDuration">countDuration (seconds)</label><input type="number" name="countDuration" id="countDuration" value="2">
+        </div>
+        <div class="controlBlock">
+            <label for="fontFamily">fontFamily</label><input type="text" name="fontFamily" id="fontFamily" value="Sukhumvit Set" onchange="fontFamilyChanged(this)">
+        </div>
+        <div class="controlBlock">
+            <label for="fontSize">fontSize</label><input type="number" name="fontSize" id="fontSize" value="150" onchange="fontSizeChanged(this)">
+        </div>
+        <div class="controlBlock">
+            <label for="backgroundColor">backgroundColor</label><input type="color" name="backgroundColor" id="backgroundColor" onchange="backgroundChanged(this)" value="#00ff00">
+        </div>
+        <div class="controlBlock">
+            <label for="textColor">textColor</label><input type="color" name="textColor" id="textColor" onchange="textChanged(this)" value="#ffffff">
+        </div>
+        <div class="controlBlock">
+            <label for="strokeColor">strokeColor</label><input type="color" name="strokeColor" id="strokeColor" onchange="strokeChanged(this)" value="#000000">
+        </div>
+        <div class="controlBlock">
+            <button onclick="runNum()">Run!</button>
+        </div>
+    </div>
+</body>
+</html>
